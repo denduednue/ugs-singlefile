@@ -3,16 +3,16 @@
 
 <!-- Ultimate Game Stash file--> 
 <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-
+<!-- Please note: this game cannot really be compressed to .chd. That would kind of be against the point of a rhythm game -->
 
   <head> 
     <script>
       window.gameconfig = {
         name: "Um Jammer Lammy",
-        url: "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/ps1/umj/Um%20Jammer%20Lammy%20(USA).iso",
+        url: "https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/psx/umj/Um%20Jammer%20Lammy%20(USA).iso",
         core: "psx",
         min: 1,
-        max: 30,
+        max: 24,
       };
     </script>
     <script>
@@ -109,12 +109,12 @@ getParts("asd.js", 0, 100)
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/bubblfan/emu@master/";
           EJS_gameUrl = gameUrl;
           EJS_biosUrl = "https://cdn.jsdelivr.net/gh/Abdess/retroarch_system@5f96368f6dbad5851cdb16a5041fefec4bdcd305/Sony%20-%20PlayStation/scph5501.bin";
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://cdn.jsdelivr.net/gh/bubblfan/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {
